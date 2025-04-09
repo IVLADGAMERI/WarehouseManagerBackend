@@ -1,13 +1,13 @@
-package org.cmd.WarehouseManager.filter;
+package org.cmd.WarehouseManager.CommonSecurity.filter;
 
 import io.jsonwebtoken.Claims;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.cmd.WarehouseManager.jwt.TokenParser;
-import org.cmd.WarehouseManager.jwt.TokenResolver;
-import org.cmd.WarehouseManager.service.TokenVersionService;
+import org.cmd.WarehouseManager.CommonSecurity.jwt.TokenParser;
+import org.cmd.WarehouseManager.CommonSecurity.jwt.TokenResolver;
+import org.cmd.WarehouseManager.CommonSecurity.service.TokenVersionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;

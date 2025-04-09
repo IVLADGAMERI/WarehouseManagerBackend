@@ -1,6 +1,6 @@
-package org.cmd.WarehouseManager.service;
+package org.cmd.WarehouseManager.CommonSecurity.service;
 
-import org.cmd.WarehouseManager.client.UserServiceClient;
+import org.cmd.WarehouseManager.CommonSecurity.client.UserServiceClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

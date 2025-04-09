@@ -1,4 +1,4 @@
-package org.cmd.WarehouseManager.config;
+package org.cmd.WarehouseManager.CommonSecurity.config;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;

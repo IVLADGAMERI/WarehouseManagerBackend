@@ -1,4 +1,4 @@
-package org.cmd.WarehouseManager.client;
+package org.cmd.WarehouseManager.CommonSecurity.client;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

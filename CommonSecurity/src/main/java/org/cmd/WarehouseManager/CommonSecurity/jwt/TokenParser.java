@@ -1,4 +1,4 @@
-package org.cmd.WarehouseManager.jwt;
+package org.cmd.WarehouseManager.CommonSecurity.jwt;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

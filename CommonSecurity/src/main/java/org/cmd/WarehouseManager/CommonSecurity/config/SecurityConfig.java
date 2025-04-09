@@ -1,7 +1,7 @@
-package org.cmd.WarehouseManager.config;
+package org.cmd.WarehouseManager.CommonSecurity.config;
 
-import org.cmd.WarehouseManager.jwt.TokenResolver;
-import org.cmd.WarehouseManager.filter.TokenVersionFilter;
+import org.cmd.WarehouseManager.CommonSecurity.jwt.TokenResolver;
+import org.cmd.WarehouseManager.CommonSecurity.filter.TokenVersionFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
