@@ -19,4 +19,6 @@ public class User {
     private String password;
     @Column(nullable = false)
     private Role role;
+    @Column(nullable = false, name = "token_version")
+    private int tokenVersion;
 }
