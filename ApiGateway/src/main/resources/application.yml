@@ -3,20 +3,23 @@ server:
 
 spring:
   application:
-    name: ApiGateway
+    name: API-GATEWAY
+  profiles:
+    active:
+      - default
   cloud:
     gateway:
       default-filters:
         - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
       routes:
-        - id: UserService
-          uri: lb://UserService
-          predicates:
-            Path=/user/**
-        - id: CargoService
-          uri: lb://CargoService
+        - id: CARGO-SERVICE
+          uri: lb://CARGO-SERVICE
           predicates:
             Path=/cargo/**
+        - id: AUTHENTICATION-SERVICE
+          uri: lb://AUTHENTICATION-SERVICE
+          predicates:
+            Path=/auth/**
       discovery:
         locator:
           enabled: true
@@ -25,6 +28,7 @@ logging:
   level:
     org.springframework.cloud.gateway: DEBUG
     org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
 eureka:
   client:
     register-with-eureka: true
