@@ -11,7 +11,7 @@ public class UserServiceClient {
     private RestTemplate restTemplate;
 
     public Integer getUserTokenVersion(String username) {
-        String uri = UriComponentsBuilder.fromUriString("http://UserService/user/token_version")
+        String uri = UriComponentsBuilder.fromUriString("http://USER-SERVICE/user/token_version")
                 .queryParam("username", username)
                 .toUriString();
         return restTemplate.getForObject(uri, Integer.class);
