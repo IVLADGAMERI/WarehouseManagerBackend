@@ -14,7 +14,7 @@ public class TokenParser {
     private final SecretKey key;
 
     public TokenParser() {
-        byte[] secretBytes = "test".getBytes(StandardCharsets.UTF_8);
+        byte[] secretBytes = "testdwafsegrhtykuiyt4r3qewrfsdghjkui8u67yrgfhnjkyuyrt5gfhjmk".getBytes(StandardCharsets.UTF_8);
         this.key = Keys.hmacShaKeyFor(secretBytes);
     }
 
