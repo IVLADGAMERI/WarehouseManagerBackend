@@ -1,4 +1,4 @@
-package com.cmd.WarehouseManager.UserService.data;
+package org.cmd.WarehouseManager.CommonTypes;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
