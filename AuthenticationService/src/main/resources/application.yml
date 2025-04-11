@@ -1,3 +1,6 @@
+jwt:
+  secret: ${WAREHOUSE_MANAGER_JWT_SECRET}
+  expiration-days: 1
 server:
   port: 8097
 spring:
