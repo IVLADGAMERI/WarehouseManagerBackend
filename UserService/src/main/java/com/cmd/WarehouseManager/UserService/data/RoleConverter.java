@@ -2,6 +2,7 @@ package com.cmd.WarehouseManager.UserService.data;
 
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
+import org.cmd.WarehouseManager.CommonTypes.Role;
 
 import java.util.stream.Stream;
 
