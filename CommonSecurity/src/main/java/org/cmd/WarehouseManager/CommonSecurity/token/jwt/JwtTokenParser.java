@@ -27,8 +27,8 @@ public class JwtTokenParser implements TokenParser {
                 .parseSignedClaims(token)
                 .getPayload();
         String username = claims.getSubject();
-        Role role = claims.get("role", Role.class);
+        String roleName = claims.get("role", String.class);
         Integer tokenVersion = claims.get("token_version", Integer.class);
-        return new JwtPrincipal(username, role, tokenVersion);
+        return new JwtPrincipal(username, Role.valueOf(roleName), tokenVersion);
     }
 }
