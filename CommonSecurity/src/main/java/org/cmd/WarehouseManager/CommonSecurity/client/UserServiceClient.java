@@ -13,9 +13,9 @@ public class UserServiceClient {
     @Autowired
     private RestTemplate restTemplate;
 
-    public Integer getUserTokenVersion(String username) {
+    public Integer getUserTokenVersion(String login) {
         String uri = UriComponentsBuilder.fromUriString("http://USER-SERVICE/user/token_version")
-                .queryParam("username", username)
+                .queryParam("login", login)
                 .toUriString();
         return restTemplate.getForObject(uri, Integer.class);
     }
@@ -26,5 +26,14 @@ public class UserServiceClient {
         UserAuthInfoRequest request = new UserAuthInfoRequest();
         request.setUsername(login);
         return restTemplate.postForObject(uri, request, UserAuthInfoDTO.class);
+    }
+
+    public void updateUserPassword(String login, String newPassword) {
+        String uri = UriComponentsBuilder.fromUriString("http://USER-SERVICE/user/update_password")
+                .toUriString();
+        UpdatePasswordRequest request = new UpdatePasswordRequest();
+        request.setLogin(login);
+        request.setNewPassword(newPassword);
+        restTemplate.put(uri, request);
     }
 }
