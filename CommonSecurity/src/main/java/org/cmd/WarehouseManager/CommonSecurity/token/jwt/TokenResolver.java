@@ -1,4 +1,4 @@
-package org.cmd.WarehouseManager.CommonSecurity.jwt;
+package org.cmd.WarehouseManager.CommonSecurity.token.jwt;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Component;
