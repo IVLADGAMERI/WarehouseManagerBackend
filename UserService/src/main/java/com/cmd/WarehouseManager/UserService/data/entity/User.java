@@ -1,9 +1,9 @@
 package com.cmd.WarehouseManager.UserService.data.entity;
 
-import com.cmd.WarehouseManager.UserService.data.Role;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.cmd.WarehouseManager.CommonTypes.Role;
 
 @Entity
 @Table(name = "users")
