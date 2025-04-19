@@ -13,7 +13,7 @@ public class AuthController {
     @Autowired
     private AuthService authService;
 
-    @PostMapping("auth/login")
+    @PostMapping("/auth/login")
     public LoginResponse login(@RequestBody LoginRequest loginRequest) {
         LoginResponse response = new LoginResponse();
         String login = loginRequest.getLogin();
