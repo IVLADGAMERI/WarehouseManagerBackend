@@ -1,8 +1,8 @@
 package com.cmd.WarehouseManager.UserService;
 
-import com.cmd.WarehouseManager.UserService.data.Role;
 import com.cmd.WarehouseManager.UserService.data.entity.User;
 import com.cmd.WarehouseManager.UserService.data.repository.UserRepository;
+import org.cmd.WarehouseManager.CommonTypes.Role;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -23,7 +23,7 @@ public class UserRepositoryTest {
     @BeforeEach
     public void createTestUser() {
         testUser = new User();
-        testUser.setRole(Role.WORKER);
+        testUser.setRole(Role.ROLE_WORKER);
         testUser.setLogin("test");
         testUser.setPassword("test");
         userRepository.save(testUser);
@@ -49,7 +49,7 @@ public class UserRepositoryTest {
         User userWithTestUserLogin = new User();
         userWithTestUserLogin.setLogin(testUser.getLogin());
         userWithTestUserLogin.setPassword("aaa");
-        userWithTestUserLogin.setRole(Role.WORKER);
+        userWithTestUserLogin.setRole(Role.ROLE_WORKER);
         Assertions.assertThrows(DataIntegrityViolationException.class, () -> {
             userRepository.save(userWithTestUserLogin);
         });
