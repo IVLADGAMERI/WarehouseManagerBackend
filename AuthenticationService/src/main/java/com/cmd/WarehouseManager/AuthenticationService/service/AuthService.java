@@ -2,7 +2,7 @@ package com.cmd.WarehouseManager.AuthenticationService.service;
 
 import com.cmd.WarehouseManager.AuthenticationService.jwt.JwtProvider;
 import jakarta.validation.constraints.NotBlank;
-import lombok.extern.log4j.Log4j2;
+import lombok.extern.slf4j.Slf4j;
 import org.cmd.WarehouseManager.CommonSecurity.client.UserServiceClient;
 import org.cmd.WarehouseManager.CommonTypes.UserAuthInfoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import org.springframework.web.client.HttpClientErrorException;
 
 @Service
 @Validated
-@Log4j2
+@Slf4j
 public class AuthService {
     @Autowired
     private JwtProvider jwtProvider;
@@ -36,6 +36,13 @@ public class AuthService {
                 userAuthInfoDTO.getRole(),
                 userAuthInfoDTO.getTokenVersion()
         );
+    }
+
+    public String changePassword(@NotBlank String login,
+                                 @NotBlank String oldPassword,
+                                 @NotBlank String newPassword) {
+        return null;
+
     }
 
     private void assertPasswordIsValid(String rawPassword,
