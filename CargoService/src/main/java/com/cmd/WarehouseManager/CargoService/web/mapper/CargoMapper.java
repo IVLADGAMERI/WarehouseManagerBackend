@@ -3,17 +3,15 @@ package com.cmd.WarehouseManager.CargoService.web.mapper;
 import com.cmd.WarehouseManager.CargoService.domain.Cargo;
 import com.cmd.WarehouseManager.CargoService.domain.CargoTag;
 import com.cmd.WarehouseManager.CargoService.web.DTO.CargoDTO;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
 public class CargoMapper {
-    public List<CargoDTO> toDTO(List<Cargo> entities) {
-        return entities.stream().map(this::toDTO).toList();
+    public static List<CargoDTO> toDTO(List<Cargo> entities) {
+        return entities.stream().map(CargoMapper::toDTO).toList();
     }
 
-    public CargoDTO toDTO(Cargo entity) {
+    public static CargoDTO toDTO(Cargo entity) {
         List<CargoTag> cargoTags = entity.getTags();
         final List<String> tags = cargoTags != null
                 ? cargoTags.stream().map(CargoTag::getName).toList()
