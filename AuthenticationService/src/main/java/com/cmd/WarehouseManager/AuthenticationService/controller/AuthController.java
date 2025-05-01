@@ -1,8 +1,8 @@
 package com.cmd.WarehouseManager.AuthenticationService.controller;
 
 import com.cmd.WarehouseManager.AuthenticationService.service.AuthService;
-import org.cmd.WarehouseManager.CommonTypes.LoginRequest;
-import org.cmd.WarehouseManager.CommonTypes.LoginResponse;
+import org.cmd.WarehouseManager.CommonTypes.request.LoginRequest;
+import org.cmd.WarehouseManager.CommonTypes.response.LoginResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

@@ -1,8 +1,8 @@
 package com.cmd.WarehouseManager.UserService.web.controller;
 
 import com.cmd.WarehouseManager.UserService.data.service.UserService;
-import org.cmd.WarehouseManager.CommonTypes.UserAuthInfoDTO;
-import org.cmd.WarehouseManager.CommonTypes.UserAuthInfoRequest;
+import org.cmd.WarehouseManager.CommonTypes.response.UserAuthInfoDTO;
+import org.cmd.WarehouseManager.CommonTypes.request.UserAuthInfoRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

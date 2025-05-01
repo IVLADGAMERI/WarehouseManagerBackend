@@ -1,4 +1,4 @@
-package org.cmd.WarehouseManager.CommonTypes;
+package org.cmd.WarehouseManager.CommonTypes.request;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;

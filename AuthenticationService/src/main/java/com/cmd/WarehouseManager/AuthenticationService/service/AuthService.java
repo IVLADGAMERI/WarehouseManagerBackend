@@ -4,7 +4,7 @@ import com.cmd.WarehouseManager.AuthenticationService.jwt.JwtProvider;
 import jakarta.validation.constraints.NotBlank;
 import lombok.extern.slf4j.Slf4j;
 import org.cmd.WarehouseManager.CommonSecurity.client.UserServiceClient;
-import org.cmd.WarehouseManager.CommonTypes.UserAuthInfoDTO;
+import org.cmd.WarehouseManager.CommonTypes.response.UserAuthInfoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.crypto.password.PasswordEncoder;

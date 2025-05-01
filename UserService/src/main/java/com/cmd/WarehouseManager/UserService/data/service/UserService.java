@@ -5,7 +5,7 @@ import com.cmd.WarehouseManager.UserService.data.repository.UserRepository;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import org.cmd.WarehouseManager.CommonTypes.Role;
-import org.cmd.WarehouseManager.CommonTypes.UserAuthInfoDTO;
+import org.cmd.WarehouseManager.CommonTypes.response.UserAuthInfoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;

@@ -1,4 +1,4 @@
-package org.cmd.WarehouseManager.CommonTypes;
+package org.cmd.WarehouseManager.CommonTypes.response;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,8 +1,8 @@
 package org.cmd.WarehouseManager.CommonSecurity.client;
 
-import org.cmd.WarehouseManager.CommonTypes.UpdatePasswordRequest;
-import org.cmd.WarehouseManager.CommonTypes.UserAuthInfoRequest;
-import org.cmd.WarehouseManager.CommonTypes.UserAuthInfoDTO;
+import org.cmd.WarehouseManager.CommonTypes.request.UpdatePasswordRequest;
+import org.cmd.WarehouseManager.CommonTypes.request.UserAuthInfoRequest;
+import org.cmd.WarehouseManager.CommonTypes.response.UserAuthInfoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
